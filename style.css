@@ -84,13 +84,13 @@ h3{
   top: -15px;
   user-select: none;
 }
-.fas{
+.fa-solid{
   font-size: 30px;
   margin: 0 15px;
   color: rgb(129, 129, 129);
   /* user-select: none; */
 }
-.fas:hover{
+.fa-solid:hover{
   filter: brightness(70%);
 }
 .main-button{

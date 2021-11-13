@@ -93,7 +93,6 @@ const setSong = () => {
 
 // next song function
 const nextSong = () => {
-    console.log('clicked');
     count++;
     if (count > songs.length-1) {
         count = 0;
