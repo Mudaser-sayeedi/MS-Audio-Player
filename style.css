@@ -1,0 +1,158 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+/* CSS Variabals */
+:root{
+  --primary-color: #c9ced3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.song-container{
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.212);
+}
+.img-container{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.472);
+  position: relative;
+  top: -50px;
+  left: 50px;
+  user-select: none;
+}
+.img-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+h2{
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+}
+h3{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+/* Progress */
+.progress-container{
+  background: #fff;
+  height: 4px;
+  width: 90%;
+  margin: 40px 5%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.progress{
+  background: #242323;
+  height: 100%;
+  /* change this to show progress */
+  max-width: 100%;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.2s linear;
+}
+.progress-time-container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -25px;
+  user-select: none;
+}
+/* Controls */
+.song-controller{
+  text-align: center;
+  position: relative;
+  top: -15px;
+  user-select: none;
+}
+.fas{
+  font-size: 30px;
+  margin: 0 15px;
+  color: rgb(129, 129, 129);
+  /* user-select: none; */
+}
+.fas:hover{
+  filter: brightness(70%);
+}
+.main-button{
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* galaxy fold up to 320px */
+@media screen and (max-width:320px) {
+  .song-container{
+    width: 260px;
+    height: 450px;
+  }
+  .img-container {
+    width: 240px;
+    height: 240px;
+    left: 4%;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (min-width:321px) and (max-width: 376px) {
+
+  .song-container{
+    width: 350px;
+  }
+  .img-container {
+    left: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
+/* for normal 2xl smaller and bigger than */
+@media screen and (min-width:377px) and (max-width: 600px) {
+  .song-container{
+    width: 370px;
+  }
+  .img-container {
+    left: 10%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
