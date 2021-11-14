@@ -60,6 +60,7 @@ h3{
   margin: 40px 5%;
   border-radius: 5px;
   cursor: pointer;
+  user-select: none;
 }
 .progress{
   background: #242323;
@@ -76,6 +77,7 @@ h3{
   position: relative;
   top: -25px;
   user-select: none;
+  z-index: 10;
 }
 /* Controls */
 .song-controller{
