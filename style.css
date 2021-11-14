@@ -72,12 +72,13 @@ h3{
   transition: width 0.2s linear;
 }
 .progress-time-container{
+  width: 90%;
+  margin: 0 5%;
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -25px;
+  top: 35px;
   user-select: none;
-  z-index: 10;
 }
 /* Controls */
 .song-controller{
