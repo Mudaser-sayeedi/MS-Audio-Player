@@ -88,6 +88,9 @@ const setSong = () => {
     h2.textContent = songs[count].name;
     h3.textContent = songs[count].artist;
     audio.src = songs[count].audioSrc;
+    isplay = true;
+    mainButton.classList.replace('fa-play', 'fa-pause');
+    mainButton.title = 'Pause';
     audio.play();
 }
 
